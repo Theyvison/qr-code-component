@@ -1,0 +1,93 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html * {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  font-size: 1.6rem;
+  padding: 2rem;
+  background-color: var(--light-gray);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  width: min(100%, 450px);
+  text-align: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1.6rem;
+}
+
+.texts h1 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+}
+
+.texts p {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: bold;
+  transition: filter 0.2s;
+}
+
+.attribution a:hover {
+  filter: brightness(1.5);
+}
+
+@media (min-width: 460px) {
+  :root {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 100%;
+  }
+}
